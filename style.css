@@ -1,0 +1,212 @@
+/* ====== General Styles ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  color: #fff;
+  overflow-x: hidden;
+  background: black;
+}
+
+/* Background Canvas */
+#starfield {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+}
+
+/* ====== Navbar ====== */
+nav {
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
+  display: flex; justify-content: center; gap: 20px;
+  padding: 15px; z-index: 1000;
+}
+nav a {
+  color: #fff; text-decoration: none; font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover { color: #00e5ff; }
+
+/* ====== Section Styling ====== */
+section {
+  padding: 80px 20px;
+  min-height: 100vh;
+  text-align: center;
+  background: transparent;
+}
+
+/* ====== Hero Section ====== */
+#home {
+  height: 100vh; /* Full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: transparent;
+}
+
+#home h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #00e5ff;
+}
+
+#home p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+
+/* ====== Skills ====== */
+.skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+.skill {
+  padding: 10px 20px;
+  border: 2px solid #00e5ff;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 5px 15px rgba(0,229,255,0.2);
+}
+/* ====== Tools ====== */
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tool {
+  padding: 10px 20px;
+  border: 2px solid #ff9800;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(255,152,0,0.3);
+}
+
+
+
+/* ====== Offer Letters Grid ====== */
+#offer-letters {
+  text-align: center;
+  padding: 100px 20px;
+  background: transparent;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.offer-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 6px 15px rgba(0,229,255,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: 180px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.offer-card:hover {
+  transform: scale(1.5);
+  z-index: 10;
+  box-shadow: 0 12px 30px rgba(0,229,255,0.7);
+}
+
+.offer-card:hover img {
+  transform: scale(1.05);
+}
+
+
+
+/* ====== Contact ====== */
+#contact a { color: #00e5ff; text-decoration: none; }
+/* ====== Contact Form ====== */
+#contact form {
+  margin: 20px auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact input, 
+#contact textarea {
+  padding: 12px;
+  border: 2px solid #00e5ff;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 1em;
+  outline: none;
+  transition: 0.3s;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #1affff;
+  box-shadow: 0 0 10px #00e5ff;
+}
+
+#contact button {
+  padding: 12px;
+  background: #00e5ff;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact button:hover {
+  background: #1affff;
+  box-shadow: 0 0 15px #00e5ff;
+}
+
+/* ====== Download CV Button ====== */
+.btn-cv {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00e5ff;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0,229,255,0.5);
+}
+
+.btn-cv:hover {
+  background: #1affff;
+  box-shadow: 0 0 25px rgba(0,229,255,0.8);
+}
+
+.a {
+    color: thistle;
+}
